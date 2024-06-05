@@ -66,7 +66,7 @@ class Sudoku:
         draw_grid(screen)
         draw_numbers(self.puzzle,self.dictionary)
         pygame.display.flip()
-        time.sleep(0.1)
+        time.sleep(0.5)
 
 def draw_grid(screen):
     for row in range(9):
@@ -81,7 +81,7 @@ def draw_numbers(puzzle,dictionary):
             txt = dictionary[puzzle[row][col]]
             img = font.render(txt, True, pygame.Color((0,0,0)),
                   pygame.Color((255,255,255)))
-            screen.blit(img, (col*CELL_SIZE + 30,row*CELL_SIZE + 15))
+            screen.blit(img, (col*CELL_SIZE + 23,row*CELL_SIZE + 23))
 grid =[
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
         [6, 0, 0, 0, 7, 5, 0, 0, 9],
