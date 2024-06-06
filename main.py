@@ -66,7 +66,7 @@ class Sudoku:
         draw_grid(screen)
         draw_numbers(self.puzzle,self.dictionary)
         pygame.display.flip()
-        time.sleep(0.5)
+        time.sleep(0.1)
 
 def draw_grid(screen):
     for row in range(9):
